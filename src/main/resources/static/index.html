@@ -7,12 +7,14 @@
     <title>Sparta Notice</title>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap"
+          rel="stylesheet">
 
     <style>
       @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+
       #inputBox {
-        color : white;
+        color: white;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -398,19 +400,23 @@
     <div class="header">
         <h2>Notice</h2>
         <p>
-            스파르탄이여, 전할 말이 있는가?
+            스파르탄이여! 전할 말이 있는가!?
         </p>
     </div>
     <div class="area-write">
-        <textarea class="field" placeholder="공유하고 싶은 소식을 입력해주세요" name="contents" id="contents" cols="30"
+        <textarea class="field" placeholder="공유하고 싶은 소식을 입력해주세요" name="contents" id="contents"
+                  cols="30"
                   rows="10"></textarea>
         <!--            <button class="btn btn-danger" onclick="writePost()">작성하기</button>-->
         <img src="images/send.png" alt="" onclick="writePost()">
     </div>
     <div id="inputBox">
-        <div class="input-form-box"><span>제목 </span><input type="title" name="utt" class="form-control"></div>
-        <div class="input-form-box"><span>이름 </span><input type="text" name="uid" class="form-control"></div>
-        <div class="input-form-box"><span>비밀번호 </span><input type="password" name="upw" class="form-control"></div>
+        <div class="input-form-box"><span>제목 </span><input type="title" name="utt"
+                                                           class="form-control"></div>
+        <div class="input-form-box"><span>이름 </span><input type="text" name="uid"
+                                                           class="form-control"></div>
+        <div class="input-form-box"><span>비밀번호 </span><input type="password" name="upw"
+                                                             class="form-control"></div>
     </div>
     <div id="cards-box" class="area-read">
         <div class="card">
@@ -429,9 +435,12 @@
             </div>
             <!-- 버튼 영역-->
             <div class="footer">
-                <img id="1-edit" class="icon-start-edit" src="images/edit.png" alt="" onclick="editPost('1')">
-                <img id="1-delete" class="icon-delete" src="images/delete.png" alt="" onclick="deleteOne('1')">
-                <img id="1-submit" class="icon-end-edit" src="images/done.png" alt="" onclick="submitEdit('1')">
+                <img id="1-edit" class="icon-start-edit" src="images/edit.png" alt=""
+                     onclick="editPost('1')">
+                <img id="1-delete" class="icon-delete" src="images/delete.png" alt=""
+                     onclick="deleteOne('1')">
+                <img id="1-submit" class="icon-end-edit" src="images/done.png" alt=""
+                     onclick="submitEdit('1')">
             </div>
         </div>
     </div>

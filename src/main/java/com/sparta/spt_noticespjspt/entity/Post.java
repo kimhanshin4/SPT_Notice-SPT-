@@ -10,6 +10,7 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 public class Post {
+
     private Long id; //post끼리 구분을 위함
     private String title;
     private String userName;
@@ -18,6 +19,14 @@ public class Post {
     private Date date;
 
     public Post(PostRequestDto requestDto) {
+        this.title = requestDto.getTitle();
+        this.userName = requestDto.getUserName();
+        this.password = requestDto.getPassword();
+        this.contents = requestDto.getContents();
+        this.date = requestDto.getDate();
+    }
+
+    public void update(PostRequestDto requestDto) {
         this.title = requestDto.getTitle();
         this.userName = requestDto.getUserName();
         this.password = requestDto.getPassword();
